@@ -1699,16 +1699,16 @@ h6 {
   }
 
   .section-padding {
-    padding: var(--sp-3xl) 0;
+    padding: var(--sp-2xl) 0;
   }
 
   .hero {
-    min-height: 100vh;
-    min-height: 100dvh;
+    min-height: 85vh;
+    min-height: 85dvh;
   }
 
   .hero-content {
-    padding: 7rem 0 var(--sp-3xl);
+    padding: 6rem 0 var(--sp-2xl);
     padding-left: var(--sp-md);
     padding-right: var(--sp-md);
   }
@@ -1717,43 +1717,140 @@ h6 {
     font-size: var(--fs-3xl);
   }
 
+  .hero p {
+    font-size: var(--fs-sm);
+  }
+
   .hero-buttons {
     flex-direction: column;
+    gap: var(--sp-sm);
   }
 
   .hero-buttons .btn {
     text-align: center;
     justify-content: center;
+    padding: 12px 20px;
   }
 
   .hero-stats {
-    flex-direction: column;
-    gap: var(--sp-lg);
+    flex-direction: row;
+    gap: var(--sp-md);
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
+  .hero-stat-number {
+    font-size: var(--fs-xl);
+  }
+
+  .hero-stat-number span {
+    font-size: var(--fs-sm);
+  }
+
+  .hero-stat-label {
+    font-size: 0.65rem;
+  }
+
+  /* Compact formation cards on mobile */
   .formations-grid {
     grid-template-columns: 1fr;
+    gap: var(--sp-md);
   }
 
+  .formation-card-header img {
+    height: 160px;
+  }
+
+  .formation-card-body {
+    padding: var(--sp-md);
+  }
+
+  .formation-card-body h3 {
+    font-size: var(--fs-base);
+  }
+
+  .formation-card-body p {
+    font-size: var(--fs-xs);
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .formation-card-footer {
+    padding: var(--sp-sm) var(--sp-md);
+  }
+
+  /* Formation tabs compact */
+  .formation-tabs {
+    gap: var(--sp-xs);
+  }
+
+  .formation-tab {
+    padding: 10px 18px;
+    font-size: var(--fs-xs);
+  }
+
+  /* Online formation cards compact */
+  .formation-card-online .formation-card-body {
+    padding: var(--sp-md);
+  }
+
+  .formation-card-online .formation-emoji {
+    font-size: 2rem;
+    margin-bottom: var(--sp-xs);
+  }
+
+  /* Materiel */
   .materiel-grid {
     grid-template-columns: 1fr 1fr;
+    gap: var(--sp-sm);
   }
 
   .materiel-tabs {
     flex-wrap: wrap;
+    gap: var(--sp-xs);
   }
 
+  .materiel-tab {
+    padding: 8px 14px;
+    font-size: var(--fs-xs);
+  }
+
+  .materiel-card h3 {
+    font-size: var(--fs-sm);
+  }
+
+  /* Team compact */
   .equipe-cards {
     grid-template-columns: 1fr;
+    gap: var(--sp-md);
   }
 
+  /* FAQ compact */
+  .faq-question {
+    padding: var(--sp-sm) var(--sp-md);
+    font-size: var(--fs-sm);
+  }
+
+  .faq-answer {
+    padding: 0 var(--sp-md) var(--sp-md);
+    font-size: var(--fs-xs);
+  }
+
+  /* Contact compact */
   .form-grid {
     grid-template-columns: 1fr;
   }
 
+  .contact-form {
+    padding: var(--sp-lg);
+  }
+
+  /* Footer compact */
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: var(--sp-xl);
+    gap: var(--sp-lg);
   }
 
   .footer-bottom {
@@ -1764,6 +1861,15 @@ h6 {
 
   .about-features {
     grid-template-columns: 1fr;
+  }
+
+  /* Section titles smaller on mobile */
+  .section-title {
+    font-size: var(--fs-xl);
+  }
+
+  .section-subtitle {
+    font-size: var(--fs-sm);
   }
 }
 
@@ -1776,12 +1882,38 @@ h6 {
     --fs-3xl: 1.4rem;
   }
 
+  .section-padding {
+    padding: var(--sp-xl) 0;
+  }
+
+  .hero {
+    min-height: 80vh;
+    min-height: 80dvh;
+  }
+
+  .hero-content {
+    padding-top: 5rem;
+  }
+
   .hero-badge {
     padding: 6px 14px;
   }
 
   .hero-badge-text {
     font-size: 0.65rem;
+  }
+
+  .hero-stats {
+    gap: var(--sp-sm);
+  }
+
+  /* Formation cards even more compact */
+  .formation-card-header img {
+    height: 130px;
+  }
+
+  .formation-card-body p {
+    -webkit-line-clamp: 2;
   }
 
   .materiel-grid {
@@ -1803,7 +1935,7 @@ h6 {
   }
 
   .contact-form {
-    padding: var(--sp-lg);
+    padding: var(--sp-md);
   }
 }
 
